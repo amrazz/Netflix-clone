@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
-import cards_data from '../../assets/cards/Cards_data'
+import React, { useEffect, useRef, useState } from 'react';
+import cards_data from '../../assets/cards/Cards_data';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './Titlecards.css'

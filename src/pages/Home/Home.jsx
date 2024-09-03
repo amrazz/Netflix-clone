@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import NavBar from "../../components/Navbar/navBar";
 import Hero from "../../assets/hero.jpg"; 
 import Hero_title from "../../assets/hero-title.png";
@@ -7,9 +7,10 @@ import info_icon from '../../assets/info_icon.png'
 import "./Home.css";
 import Titlecards from "../../components/TitleCards/Titlecards";
 import Footer from "../../components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
-
-const Home = () => {
+const  Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="home">
       <NavBar />
@@ -24,7 +25,11 @@ const Home = () => {
             again with an even more reluctant Wolverine.
           </p>
           <div className="hero-btns">
-          <button className="btn"><img src={play_icon} alt="" />Play</button>
+          <button className="btn"
+          onClick={() => {
+            navigate('/player/533535')
+          }}
+          ><img src={play_icon} alt="" />Play</button>
           <button className="btn dark-btn"><img src={info_icon} alt="" />More Info</button>
           </div>
       <Titlecards />

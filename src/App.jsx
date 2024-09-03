@@ -7,8 +7,6 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase.js';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
 const App = () => {
   const navigate = useNavigate();
   useEffect(() => {
