@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import NavBar from "../../components/Navbar/navBar";
+import NavBar from '../../components/Navbar/NavBar'
 import Hero from "../../assets/hero.jpg"; 
 import Hero_title from "../../assets/hero-title.png";
 import play_icon from '../../assets/play_icon.png'
